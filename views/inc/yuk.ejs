@@ -1,0 +1,22 @@
+<div class="yuk" id="yuk">
+    <img src="yk.gif" alt="" class="yk-gif">
+    <h2 style="font-size: 30px;">Yükleniyor . . .</h2>
+</div>
+    <audio src="login.mp3" autoplay></audio>
+    <script>
+    yk();
+    function yk(){
+        setTimeout(ykkk, 1100)
+        document.getElementById('yuk').style.opacity="100%";
+    }
+
+    function ykkk(){
+        document.getElementById('yuk').style.opacity="0%";
+        document.getElementById('yuk').style.transition="1s";
+        setTimeout(ykkkk, 800)            
+    }
+
+    function ykkkk(){
+        document.getElementById('yuk').style.display="none";
+    }
+</script>

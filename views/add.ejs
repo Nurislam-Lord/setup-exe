@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+<%-include('./inc/head')%>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+<head>
+<body>
+    <%-include('./inc/yuk')%>
+    <%-include('./inc/navbar')%>
+    <div style="overflow: scroll; margin-bottom: 50px; padding-bottom: 40px; padding-top: 50px; margin-top: 80px; background-color: rgba(0, 0, 0, 0.589); height: 91vh; text-align: center;">
+        <!-- <p style="font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam aut odio rerum quaerat rem atque, cum officia dolor exercitationem assumenda qui, nobis iure earum. Ipsum ab nemo sunt error culpa velit? Maiores beatae nostrum consequatur, quisquam iste praesentium minima, facere ducimus aut dolore cumque quod, quidem odio! Vero doloremque iure possimus incidunt magnam vel alias dolorum, minima molestiae itaque laboriosam officiis inventore dolorem labore doloribus saepe repellendus fuga, maiores deleniti cum laudantium suscipit eos. Ipsa nulla ad facilis quae beatae consequuntur odit ipsam impedit repellat! Corrupti, adipisci dolor voluptatem aspernatur vel accusamus doloremque deleniti delectus cumque debitis minima distinctio maiores esse numquam officia similique porro quibusdam sit velit? Vel mollitia autem quod vitae. Aperiam voluptatum, iusto repudiandae eius cum ipsam facere at expedita quia laborum amet rerum impedit incidunt voluptatibus. Inventore, ut sapiente ab tempora aspernatur placeat nemo doloremque, voluptatibus fugit facere odit quas. Odio excepturi sit labore fugit, aliquid eveniet ad laudantium voluptate sint incidunt aliquam dolore id cum fugiat non assumenda nisi nam accusamus unde deserunt qui! Cupiditate natus alias ratione quas sunt distinctio nisi tempore. Est placeat ipsum ad esse excepturi eveniet aliquam ut impedit, quas omnis obcaecati nihil totam minus eius? Est, aliquid quidem? Laborum nisi eius soluta reiciendis, nam nihil aspernatur magnam, ab aperiam accusantium possimus, sint enim. Cum minus blanditiis quo fuga officia assumenda facere voluptatem? Maxime iste fugit quae veniam aspernatur nulla dolores repellendus facilis sapiente tempora nemo pariatur dolorem voluptatem est eum inventore, suscipit eos veritatis quam nesciunt, a magnam voluptatum cupiditate perspiciatis! Repellat, esse. Velit alias ad, placeat ea cum quos doloribus atque ipsum consectetur, ipsa id blanditiis eveniet minus dolore ducimus? Quibusdam aperiam, cumque nisi, enim harum laborum dolorem incidunt ut eligendi aspernatur similique atque praesentium dicta nam corrupti eveniet provident autem officiis accusamus id? Culpa aspernatur nam fuga?</p> -->
+        <form action="/add" method="post">
+            <h1 style="margin-bottom: 20px; font-size: 40px;">Yeni ekle</h1>
+            <input type="text" name="baslik" placeholder="Başlık" class="inpute" required autocomplete="off"><br><br>
+            <input type="text" name="iurl" placeholder="İndirme linki"  class="inpute" required autocomplete="off"><br><br>
+            <input type="text" name="ylink" placeholder="Video linki"  class="inpute" required autocomplete="off"><br><br>
+            <input type="text" name="rurl" placeholder="Logo url"  class="inpute" required autocomplete="off"><br><br>
+            <textarea name="acik" id="" cols="70" rows="10" style="background-color: black; font-size: 25px;" required autocomplete="off"></textarea><br><br>
+            <input type="text" name="rbir" placeholder="resim url1"  class="inpute" required autocomplete="off"><br><br>
+            <input type="text" name="riki" placeholder="resim url2"  class="inpute" required autocomplete="off"><br><br>
+            <input type="text" name="ruc" placeholder="resim url3"  class="inpute" required autocomplete="off"><br><br>
+            <input type="text" name="rdort" placeholder="resim url4"  class="inpute" required autocomplete="off"><br><br>
+            <input type="text" name="rbes" placeholder="resim url5"  class="inpute" required autocomplete="off"><br><br>
+            <input type="submit" class="yayinla" value="Yayınla">
+        </form>
+        <%-include('./inc/footer')%>
+    <%-include('./inc/js')%>
+</div>
+<style>
+    .yayinla{
+        background-color: black;
+        transition: 0.2s;
+        color: whitesmoke;
+        border-radius: 10px;
+        font-size: 35px;
+        padding-left: 50px;
+        padding-right: 50px;
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 100px;
+    }
+
+    .yayinla:hover{
+        transition: 0.2s;
+        background-color: aqua;
+        border-radius: 200px;
+        color: black;
+        border: none;
+    }
+</style>
+</body>
+</html>

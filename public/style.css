@@ -1,0 +1,333 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+}
+
+.footer{
+    background-color: black;
+    padding: 15px;
+    width: 100%;
+    z-index: 100000;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+*::selection{
+    background-color: aqua;
+    color: black;
+}
+
+*::-moz-selection{
+    background-color: aqua;
+    color: black;
+}
+
+.yuk{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 20vh;
+}
+
+.yk-gif{
+    width: 50vh;
+    max-width: 300px;
+}
+
+.logo{
+    width: 100px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.sil:hover{
+    background-color: red;
+    transition: 0.3s;
+    color: whitesmoke;
+}
+
+.sil{
+    font-size: 35px; 
+    background-color: rgba(255, 0, 0, 0); 
+    color: whitesmoke; 
+    padding-top: -7px; 
+    padding-left: 35px; 
+    color: black;
+    border: solid red 2px;
+    padding-right: 35px;
+    margin-top: 30px;
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar{
+    height: 10px;
+    padding: 2px;
+    width: 10px;
+    background-color: rgb(39, 67, 116);
+    margin-top: 80px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.p-kutu{
+    background-color: rgba(255, 255, 255, 0.719);
+    padding: 20px;
+    width: 180px;
+    display: inline-block;  
+    word-break: break-word; 
+    table-layout:fixed;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.inpute{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: solid 2px whitesmoke;
+}
+
+
+textarea{
+    resize: none;
+}
+
+.y-z:hover{
+    border-radius: 35px;
+    transition: 0.25s;
+}
+
+.y-z{
+    transition: 0.25s;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+.p-kutu-a{
+    background-color: rgba(255, 255, 255, 0.719);
+    padding: 20px;
+    width: 180px;
+    display: inline-block;  
+    word-break: break-word; 
+    table-layout:fixed;
+    height: auto;
+    transition: 0.3s;
+    border-radius: 8px;
+    cursor: default;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.p-logo{
+    width: 150px;
+    transition: 0.3s;
+}
+
+.p-kutu:hover{
+    border-radius: 20px;
+    transition: 0.3s;
+    padding: 25px;
+    background-color: rgba(0, 255, 255, 0.466);
+}
+
+.p-kutu:hover > .p-yazi{
+    color: white;
+    transition: 0.3s;
+}
+
+.p-yazi{
+    transition: 0.3s;
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+nav{
+    display: flex;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgb(158, 113, 71);
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+nav ul{
+    list-style: none;
+    align-items: center;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* #ara{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.input::placeholder{
+    color: rgba(245, 245, 245, 0.788);
+}
+
+.input{
+    outline: none;
+    font-size: 23px;
+    margin-right: -30px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 170px;
+    border-bottom: solid 1pt rgb(255, 255, 255);
+} .box{
+    background-color: rgb(180, 180, 180);
+} 
+
+a{
+    text-decoration: none;
+}*/
+
+.ad{
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 40px;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 10px;
+    transition: 0.30s;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    border: solid 3px rgb(0, 153, 255);
+}
+
+.ad:hover{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 28px;
+    transition: 0.30s;
+    background-color: rgb(0, 153, 255);
+}
+
+nav ul li{
+    /* margin-top: 20px; */
+    /* margin-right: 30px; */
+    font-size: 30px;
+    transition: 0.25s ease-in;
+    color: whitesmoke;
+}
+
+.sos{
+    list-style: none;
+}
+
+.mh:hover > li{
+    transition: 0.25s ease-in;
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+.mh{
+    transition: 0.25s ease-in;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    /* padding-right: -20px; */
+}
+
+.mh:hover{
+    font-size: 25px;
+    background-color: aqua;
+    transition: 0.25s ease-in;
+}
+
+.ara-btn{
+    margin-right: 30px;
+    font-size: 30px;
+    color: aquamarine;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.box{
+    text-align: center;
+}
+ 
+.a{
+    color: rgb(255, 255, 255);
+    background-color: rgba(12, 247, 255, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+.box:hover > .a{
+    background-color: rgba(0, 247, 255, 0.795);
+    transition: 0.25s;
+}
+
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.input{
+    transition: 0.5s ease-in-out;
+    width: 0px;
+    padding: 0px;
+    font-size: 22px;
+    color: aquamarine;
+    outline: none;
+    padding: 10px;
+    opacity: 0%;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: solid 1px aqua;
+}
+
+.logo{
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.box:hover > .input{
+    width: 155px;
+    color: whitesmoke;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    opacity: 100%;
+}

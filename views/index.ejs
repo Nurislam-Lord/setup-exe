@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+<%-include('./inc/head')%>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+<head>
+<body>
+    <%-include('./inc/yuk')%>
+    <%-include('./inc/navbar')%>
+    <div style="overflow: scroll; margin-bottom: 50px; padding-bottom: 40px; padding-top: 50px; margin-top: 80px; background-color: rgba(0, 0, 0, 0.589); height: 91vh; text-align: center;">
+        <!-- <p style="font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nam aut odio rerum quaerat rem atque, cum officia dolor exercitationem assumenda qui, nobis iure earum. Ipsum ab nemo sunt error culpa velit? Maiores beatae nostrum consequatur, quisquam iste praesentium minima, facere ducimus aut dolore cumque quod, quidem odio! Vero doloremque iure possimus incidunt magnam vel alias dolorum, minima molestiae itaque laboriosam officiis inventore dolorem labore doloribus saepe repellendus fuga, maiores deleniti cum laudantium suscipit eos. Ipsa nulla ad facilis quae beatae consequuntur odit ipsam impedit repellat! Corrupti, adipisci dolor voluptatem aspernatur vel accusamus doloremque deleniti delectus cumque debitis minima distinctio maiores esse numquam officia similique porro quibusdam sit velit? Vel mollitia autem quod vitae. Aperiam voluptatum, iusto repudiandae eius cum ipsam facere at expedita quia laborum amet rerum impedit incidunt voluptatibus. Inventore, ut sapiente ab tempora aspernatur placeat nemo doloremque, voluptatibus fugit facere odit quas. Odio excepturi sit labore fugit, aliquid eveniet ad laudantium voluptate sint incidunt aliquam dolore id cum fugiat non assumenda nisi nam accusamus unde deserunt qui! Cupiditate natus alias ratione quas sunt distinctio nisi tempore. Est placeat ipsum ad esse excepturi eveniet aliquam ut impedit, quas omnis obcaecati nihil totam minus eius? Est, aliquid quidem? Laborum nisi eius soluta reiciendis, nam nihil aspernatur magnam, ab aperiam accusantium possimus, sint enim. Cum minus blanditiis quo fuga officia assumenda facere voluptatem? Maxime iste fugit quae veniam aspernatur nulla dolores repellendus facilis sapiente tempora nemo pariatur dolorem voluptatem est eum inventore, suscipit eos veritatis quam nesciunt, a magnam voluptatum cupiditate perspiciatis! Repellat, esse. Velit alias ad, placeat ea cum quos doloribus atque ipsum consectetur, ipsa id blanditiis eveniet minus dolore ducimus? Quibusdam aperiam, cumque nisi, enim harum laborum dolorem incidunt ut eligendi aspernatur similique atque praesentium dicta nam corrupti eveniet provident autem officiis accusamus id? Culpa aspernatur nam fuga?</p> -->
+        <h1 style="margin-bottom: 20px; font-size: 40px;">En yeniler</h1>
+        <% progs.forEach(progs => { %>
+            <a href="/<%=progs._id%>"><div class="p-kutu">
+            <img src='<%=progs.rurl%>' class="p-logo" alt="">
+            <h2 class="p-yazi"><%=progs.baslik%></h2>
+        </div></a>
+        <% }) %>
+        <%-include('./inc/footer')%>
+    <%-include('./inc/js')%>
+</div>
+</body>
+</html>
