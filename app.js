@@ -34,7 +34,7 @@ app.get('/',(req,res) => {
         }).catch((err) => {
             console.log(err);
         });
-    console.log(req.ip)
+    alert(req.ip)
 })
 
 app.post('/' , (req , res)=>{
